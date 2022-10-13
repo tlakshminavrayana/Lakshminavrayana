@@ -1,0 +1,25 @@
+pipeline {
+agent any
+stages {
+stage ("stage1")
+{
+steps{
+echo "hello"
+}
+}
+stages {
+stage ("stage2")
+{
+steps{
+echo "hello_stage2"
+}
+}
+stages {
+stage ("stage3")
+{
+steps{
+echo "hello_stage3"
+}
+}
+}
+}
